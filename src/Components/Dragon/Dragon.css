@@ -1,0 +1,24 @@
+.dragon { 
+    background-color: #000;
+    color: #F3F3F3 ;
+
+}
+
+.dragon h1 {
+    color: rgb(245, 245, 245);
+    font-size: 5rem;
+    margin-bottom: 4rem;
+}
+
+.dragon h1 span {  
+    background-image:  url(../../img/universe.jpg);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-position: -85% 45%;
+    color: #F3F3F3 ;
+    text-shadow: 0 0 55px #999, 0 0 75px #666, -3px -8px 11px rgba(255, 255, 255, 0.267);
+}
+
+.dragon .dragon-shuttle { 
+
+}

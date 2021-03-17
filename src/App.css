@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden; 
+  font-family: 'Righteous', cursive;
+  background-color:  #100226 ;
+}
+
+
+.App {
+  text-align: center;
+  background-color:  #100226 ;
+}
+ 

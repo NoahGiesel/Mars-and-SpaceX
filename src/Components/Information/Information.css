@@ -1,0 +1,71 @@
+.info {
+
+    padding-bottom: 10rem;
+    background: linear-gradient(to bottom, #100226, #000);
+ }
+
+.info  span {
+    color: rgb(235, 62, 62);
+    font-size: 5rem;
+    margin-bottom : 4rem ;
+}
+ 
+
+.info h1 {
+    color: rgb(245, 245, 245);
+    font-size: 5rem;
+    margin-bottom : 4rem ;
+}
+ 
+.info .container {
+    display: grid;
+    grid-template-columns: .7fr 1.3fr; 
+    width: 90%;
+    margin: 0 auto;
+}
+.info .introduction{
+    width: 70%;
+    margin: 7rem auto;
+    font-size: 1.1rem;
+    line-height: 2.3rem;
+    color: #fff;
+}
+
+
+.info .container img{
+    margin: 0 auto;
+    width: 85%; 
+}
+
+.info .container .text-section { 
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+.info .container .text-section span {
+    color: rgb(235, 62, 62);
+    font-size: 4rem;
+    margin-bottom : 4rem ;
+}
+
+
+.info .container .text-section h2{
+    margin-bottom: 4rem;
+    font-size: 4rem;
+}
+
+.info .container .text-section p{
+    line-height: 2rem;
+    font-size: 1.1rem;
+    justify-content: left;
+}
+
+.info .container .text-section h2,  
+.info .container .text-section p{
+    color: #f3f3f3; 
+}
+ 
+ 
+  
