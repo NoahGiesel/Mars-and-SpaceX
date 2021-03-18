@@ -10,7 +10,7 @@ function App() {
       <Header />  
       <Landing />  
       <Information />
-      <Dragon />
+      <Dragon /> 
     </div>
   );
 }
