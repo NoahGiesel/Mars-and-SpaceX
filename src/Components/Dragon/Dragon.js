@@ -6,17 +6,15 @@ import video from "../../img/DragonTrunk_Animation_Render_Desktop.mp4"
 
 
 
-function Dragon() {
-    let videoHasBeenLoaded = false;
-    useEffect(() => { 
-        
-    }, [])
-    return (
+const  Dragon = () =>  {
+    
+     
+    
+
+
+    return ( 
         <div className="dragon">
-            <h1>Sending Humans and Cargo into <span>Space</span> 🚀 </h1>
-            <video className="video-background" controls>
-                <source src={video} autoPlay muted loop  />
-            </video>
+            <h1>Sending Humans and Cargo into <span>Space</span> 🚀 </h1> 
             <div className="upper"> 
                  
                 <div className="dragon-shuttle"> 
@@ -68,10 +66,10 @@ function Dragon() {
                             </div>
                         </div> 
                     </div>
-                    
                 </div>
             </div>
         </div>
+                    
     )
 }
 

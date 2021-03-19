@@ -3,6 +3,7 @@ import Header from "./Components/Header/Header"
 import Landing from "./Components/Landing/Landing"
 import Information from "./Components/Information/Information"
 import Dragon from "./Components/Dragon/Dragon"
+import Footer from "./Components/Footer/Footer"
 
 function App() {
   return (
@@ -11,6 +12,8 @@ function App() {
       <Landing />  
       <Information />
       <Dragon /> 
+      <Dragon /> 
+      <Footer /> 
     </div>
   );
 }

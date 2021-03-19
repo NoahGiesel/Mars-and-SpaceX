@@ -18,7 +18,7 @@ function Information() {
            <h1>The <span>Red</span> Planet</h1> 
            <p className="introduction">In 1994, NASA announced the start of the Mars Exploration Program (MEP), initially called the Mars Surveyor Program. NASA assigned the lead role for MEP implementation to the Jet Propulsion Laboratory (JPL). MEP explores Mars on behalf of NASA’s Science Mission Directorate (SMD). MEP currently operates rovers and orbiters on and around Mars, contributes to Mars missions conducted by national and international partners, and is formulating and developing future rover and orbiter missions. Scientific data and associated information for all MEP missions are archived in the NASA Planetary Data System. Organized programmatically, MEP missions mutually support each other.</p>
             <div className="container">
-                <img src={planet} id="planet" alt="planet"/> 
+                <img src={planet} id="planet" alt="planet"  /> 
                 <div className="text-section">
                     <h2><span>Mars</span> Exploration Program</h2>
                     <p>The goal of the Mars Exploration Program is to explore Mars and to provide a continuous flow of scientific information and discovery through a carefully selected series of robotic orbiters, landers and mobile laboratories interconnected by a high-bandwidth Mars/Earth communications network.</p>

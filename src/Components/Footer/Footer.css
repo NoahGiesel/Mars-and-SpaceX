@@ -1,0 +1,62 @@
+.footer {
+    width: 100vw;
+    overflow-x: hidden;
+    height: auto;
+    background-color: #000;
+    color: #fff;
+    position: relative; 
+}
+
+ 
+
+.footer .image { 
+    transform: blur(4px);
+}
+ 
+.footer .grid { 
+    position: absolute;  
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 55% ;   
+}
+
+.footer .grid .text {   
+ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vh 5vw;
+    border-bottom: 1px solid #fefefeb6;
+    margin-bottom: 4vh;
+}
+ 
+
+.footer .text .container h4 {
+    font-size: 2rem;
+    margin-bottom: 2vh;
+}
+
+.footer .text .container p {
+    font-size: 1.2rem;
+    margin : 2vh 0
+}
+
+.footer .grid .informations {   
+ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    width: 40%;
+    margin : 0 auto;  
+    color: rgba(255, 255, 255, 0.74);
+}
+
+.footer .grid .informations a  {    
+    color: rgba(255, 255, 255, 0.74);
+    text-decoration: none;
+}
+.footer .grid .informations a:hover {   
+ 
+    color: rgb(255, 255, 255);
+}

@@ -32,7 +32,7 @@
  .dragon-shuttle {  
         width: 100vw;
         height: 100vh; 
-         /*background: url(../../img/dragon_trunk_total.png) ; */  
+         background: url(../../img/dragon_trunk_total.png)  ;
         background-size: cover; 
         position: relative;
 
@@ -40,7 +40,7 @@
 
  .dragon-shuttle .container { 
      position: absolute;
-     left: 25%;
+     left: 75%;
      top: 50%;
      transform: translate(-50%,-50%);
      width: 30%;
