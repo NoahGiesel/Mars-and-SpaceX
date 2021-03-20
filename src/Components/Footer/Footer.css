@@ -60,3 +60,8 @@
  
     color: rgb(255, 255, 255);
 }
+
+.footer .grid .informations  a h1:hover {   
+ 
+    color: rgb(235, 62, 62);
+}

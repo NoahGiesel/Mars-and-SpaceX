@@ -3,6 +3,7 @@ import Header from "./Components/Header/Header"
 import Landing from "./Components/Landing/Landing"
 import Information from "./Components/Information/Information"
 import Dragon from "./Components/Dragon/Dragon"
+import Starship from "./Components/Starship/Starship"
 import Footer from "./Components/Footer/Footer"
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
       <Header />  
       <Landing />  
       <Information />
-      <Dragon /> 
+      <Starship /> 
       <Dragon /> 
       <Footer /> 
     </div>

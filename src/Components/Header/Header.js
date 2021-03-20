@@ -14,7 +14,7 @@ function Header() {
         } else {
             setHeader( 'rgba(0,0,0,0)' )
         }
-        if (window.scrollY > 500  ) {
+        if (window.scrollY > 1500  ) {
             setHeader( 'rgb(0, 0, 0)' )
         }  
       }

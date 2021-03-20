@@ -2,6 +2,7 @@ import React from 'react'
 
 import "./Footer.css"
 import mars_world from "../../img/mars_world.jpg" 
+import land_shuffle from "../../img/land_shuffle.png" 
 
   
 const  Footer = ()  => {

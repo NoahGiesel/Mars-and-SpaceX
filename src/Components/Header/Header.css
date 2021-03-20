@@ -1,6 +1,6 @@
 .header {
     width: 100vw;
-    min-height: 6vh;
+    min-height: 4vh;
     padding: 1vh 0;
     background-color: rgba(255, 0, 0, 0);
     position: fixed;
@@ -20,7 +20,7 @@
 }
 
 .header img {
-    width: 3%;
+    width: 2%;
 } 
 
 .header .container a{
@@ -29,8 +29,9 @@
     margin: 0 1.5vw;
     color: #fefefe;
     text-decoration: none;
+    transition: 250ms;
 }
 
 .header .container a:hover{ 
-    text-decoration: underline;
+    color : rgb(235, 62, 62);
 }

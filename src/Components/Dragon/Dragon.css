@@ -18,7 +18,7 @@
 .dragon h1 {
     color: rgb(245, 245, 245);
     font-size: 5rem;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 .dragon h1 span {  
@@ -31,7 +31,7 @@
 }
  .dragon-shuttle {  
         width: 100vw;
-        height: 100vh; 
+        height: 130vh; 
          background: url(../../img/dragon_trunk_total.png)  ;
         background-size: cover; 
         position: relative;
