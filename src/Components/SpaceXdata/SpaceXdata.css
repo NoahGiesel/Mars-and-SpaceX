@@ -1,9 +1,41 @@
-.spaceX {
+.Nasa-spaceX {
   background-color: #000;
   width: 100vw;
   color: #fefefe;
 }
 
-.spaceX h2 {
+.Nasa-spaceX h2 {
   font-size: 6rem;
+  padding: 5rem 0;
+}
+.Nasa-spaceX h2 .nasa {
+  background-image: url(../../img/nasa_logo.png);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-position: -65% 45%;
+  color: #f3f3f3;
+}
+
+.Nasa-spaceX h2 .spacex {
+  background-image: url(../../img/Crew_1_equipaggioSeduto_foto_Nasa_cut-1050x590.jpg);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-position: -90% 45%;
+  background-size: cover;
+  color: #f3f3f3;
+}
+
+.Nasa-spaceX .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.Nasa-spaceX .container img {
+  max-width: 75%;
+}
+
+.Nasa-spaceX .container .second-section {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  text-align: center;
 }
