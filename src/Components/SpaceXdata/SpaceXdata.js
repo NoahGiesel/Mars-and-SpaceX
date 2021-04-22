@@ -70,7 +70,6 @@ function SpaceXdata() {
     const data = api.json();
     data
       .then((e) => {
-        console.log(e);
         setApiData({
           name: e.name,
         });
