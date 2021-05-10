@@ -5,6 +5,7 @@ import mars_world from "../../img/mars_world.jpg";
 
 const Footer = () => {
   return (
+    
     <div className="footer">
       <img alt="mars" src={mars_world} />
       <div className="grid">
