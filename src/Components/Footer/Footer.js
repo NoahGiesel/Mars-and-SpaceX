@@ -26,10 +26,10 @@ const Footer = () => {
           </div>
           <div className="container">
             <h4>Footer</h4>
-            <p>about</p>
-            <p>about</p>
-            <p>about</p>
-            <p>about</p>
+            <p>Footer</p>
+            <p>Footer</p>
+            <p>Footer</p>
+            <p>Footer</p>
           </div>
           <div className="container">
             <h4>Footer</h4>

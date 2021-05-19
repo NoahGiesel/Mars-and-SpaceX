@@ -9,6 +9,7 @@ import SpaceXdata from "./Components/SpaceXdata/SpaceXdata";
 import Footer from "./Components/Footer/Footer";
 //group all together
 function App() {
+  
   return (
     <div className="App">
       <Header />
