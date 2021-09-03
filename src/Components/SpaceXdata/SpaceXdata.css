@@ -8,6 +8,7 @@
   font-size: 6rem;
   padding: 5rem 0;
 }
+
 .Nasa-spaceX h2 .nasa {
   background-image: url(../../img/nasa_logo.png);
   -webkit-text-fill-color: transparent;
@@ -36,6 +37,24 @@
 
 .Nasa-spaceX .container .second-section {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: .5fr 2fr;
+  text-align: center;
+  width: 80%;
+}
+
+.informations {
+  margin: auto 0;
+}
+
+.height{
+  padding-top: 3vh;
+}
+.title {
+  font-size: 3rem;
+  margin-top: 2rem;
+}
+
+.about-api p { 
+  margin: 2vh auto;
   text-align: center;
 }

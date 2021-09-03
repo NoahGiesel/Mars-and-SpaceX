@@ -28,8 +28,8 @@ function SpaceXdata() {
 
   useEffect(() => {
     getSpaceX();
-    getApod();
     getNasaGov();
+    getApod();
   }, []);
 
   const getSpaceX = async () => {
@@ -52,15 +52,15 @@ function SpaceXdata() {
     const data = api.json();
     data
       .then((e) => {
-        console.log(e);
-        setApod({
+        const obj = {
           author: e.copyright,
           date: e.date,
           explanation: e.explanation,
           img_url: e.hdurl,
           Title: e.title,
-        });
-        console.log("apod ", apod);
+        };
+
+        setApod(obj);
       })
       .catch((e) => console.log(e));
   };
@@ -70,7 +70,6 @@ function SpaceXdata() {
     const data = api.json();
     data
       .then((e) => {
-        
         setApiData({
           name: e.name,
         });
@@ -84,17 +83,25 @@ function SpaceXdata() {
         Latest of <span className="nasa">NASA</span> and{" "}
         <span className="spacex">SPACEX</span>
       </h2>
-      <div className="container">
+      <div className="about-api">
+        <p>
+          The following informations are gardered from nasa's public api (APOD,
+          Astronomy Picture Of the Day) and from SpaceX latest news about the
+          last cargo or spaceship launch!
+        </p>
+      </div>
+      <div className="container height">
         <div className="first-section">
-          <img src={apiData.img_url} alt="apod" />
+          <img src={apod.img_url} alt="apod" />
         </div>
         <div className="second-section">
+          <div>
+            <p className="title"> {apod.Title}</p>
+            <p>Author: {apod.author}</p>
+            <p>Date: {apod.date}</p>
+          </div>
           <div className="informations">
-            <img src={apiData.img_url} alt="apod" />
-            <p>
-              this is the text for the image above that now is just here as a
-              placeholder
-            </p>
+            <p>{apod.explanation}</p>
           </div>
         </div>
       </div>

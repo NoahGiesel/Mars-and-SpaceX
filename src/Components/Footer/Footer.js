@@ -5,7 +5,6 @@ import mars_world from "../../img/mars_world.jpg";
 
 const Footer = () => {
   return (
-    
     <div className="footer">
       <img alt="mars" src={mars_world} />
       <div className="grid">
@@ -40,12 +39,12 @@ const Footer = () => {
           </div>
         </div>
         <div className="informations">
-          <a href={""}>PRIVACY</a>
-          <a href={""}>TERMS</a>
-          <a href={""}>
+          <a href="#0">PRIVACY</a>
+          <a href="#0">TERMS</a>
+          <a href="#0">
             <h1>MARS</h1>
           </a>
-          <a href={""}>MORE</a>
+          <a href="#0">MORE</a>
           <p>2021</p>
         </div>
       </div>
