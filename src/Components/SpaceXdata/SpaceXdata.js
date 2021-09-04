@@ -85,9 +85,9 @@ function SpaceXdata() {
       </h2>
       <div className="about-api">
         <p>
-          The following informations are gardered from nasa's public api (APOD,
-          Astronomy Picture Of the Day) and from SpaceX latest news about the
-          last cargo or spaceship launch!
+          The following informations are gardered from nasa's public api (
+          "APOD", "Astronomy Picture Of the Day" ) and from SpaceX latest news
+          about the last cargo or spaceship launch!
         </p>
       </div>
       <div className="container height">

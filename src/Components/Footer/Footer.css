@@ -58,3 +58,8 @@
 .footer .grid .informations a h1:hover {
   color: rgb(235, 62, 62);
 }
+
+
+.footer .year  {
+  margin-top: 3vh;
+}

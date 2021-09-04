@@ -40,13 +40,12 @@ const Footer = () => {
         </div>
         <div className="informations">
           <a href="#0">PRIVACY</a>
-          <a href="#0">TERMS</a>
           <a href="#0">
             <h1>MARS</h1>
           </a>
-          <a href="#0">MORE</a>
-          <p>2021</p>
+          <a href="#0s">TERMS</a>
         </div>
+        <p className="year">2021</p>
       </div>
     </div>
   );
