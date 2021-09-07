@@ -2,6 +2,10 @@ import React, { useState, useEffect } from "react";
 import "./SpaceXdata.css";
 
 function SpaceXdata() {
+  // this component fetches 2 api calls inside 2 useState:
+  // apod ( nasa picture of the day )
+  // spaceX ( spaceX latest about launches )
+
   const [apod, setApod] = useState({
     author: "",
     date: "",
@@ -9,7 +13,7 @@ function SpaceXdata() {
     img_url: "",
     title: "",
   });
-  const [apiData, setApiData] = useState(
+  const [spaceX, setSpaceX] = useState(
     {
       name: "",
       date_local: "",
@@ -28,7 +32,6 @@ function SpaceXdata() {
 
   useEffect(() => {
     getSpaceX();
-    getNasaGov();
     getApod();
   }, []);
 
@@ -37,10 +40,11 @@ function SpaceXdata() {
     const data = api.json();
     data
       .then((e) => {
-        console.log(e);
-        setApiData({
+        const obj = {
           name: e.name,
-        });
+        };
+        console.log(obj);
+        //setSpaceX(obj)
       })
       .catch((e) => console.log(e));
   };
@@ -61,18 +65,6 @@ function SpaceXdata() {
         };
 
         setApod(obj);
-      })
-      .catch((e) => console.log(e));
-  };
-
-  const getNasaGov = async () => {
-    const api = await fetch("https://api.spacexdata.com/v4/launches/latest");
-    const data = api.json();
-    data
-      .then((e) => {
-        setApiData({
-          name: e.name,
-        });
       })
       .catch((e) => console.log(e));
   };
