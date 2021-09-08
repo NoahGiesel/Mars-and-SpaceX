@@ -40,10 +40,11 @@ function SpaceXdata() {
     const data = api.json();
     data
       .then((e) => {
+        console.log(data);
         const obj = {
           name: e.name,
         };
-        console.log(obj);
+        console.log(obj.name);
         //setSpaceX(obj)
       })
       .catch((e) => console.log(e));
