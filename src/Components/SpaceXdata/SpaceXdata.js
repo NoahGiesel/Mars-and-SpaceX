@@ -35,6 +35,7 @@ function SpaceXdata() {
     getApod();
   }, []);
 
+  // function for spaceX data retrival
   const getSpaceX = async () => {
     const api = await fetch("https://api.spacexdata.com/v4/launches/latest");
     const data = api.json();
@@ -50,6 +51,7 @@ function SpaceXdata() {
       .catch((e) => console.log(e));
   };
 
+  // function for apod data retrival
   const getApod = async () => {
     const api = await fetch(
       `https://api.nasa.gov/planetary/apod?api_key=${process.env.REACT_APP_API_NASA_GOV}`
