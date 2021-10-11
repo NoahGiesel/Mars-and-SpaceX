@@ -28,15 +28,28 @@
   margin-bottom: 4vh;
 }
 
+.footer .text .container .logo {
+  margin-top: 100%; 
+}
+
 .footer .text .container h4 {
   font-size: 2rem;
-  margin-bottom: 2vh;
+  margin-bottom: 4vh;
+}
+.footer .text .container h4:hover {
+  color: rgb(235, 62, 62);
+  cursor: pointer;
 }
 
 .footer .text .container p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-align: left;
   margin: 2vh 0;
+}
+
+.footer .text .container p:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .footer .grid .informations {

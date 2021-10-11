@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./SpaceXdata.css";
+import Iframe from 'react-iframe'
 
 function SpaceXdata() {
   // this component fetches 2 api calls inside 2 useState:
@@ -13,44 +14,13 @@ function SpaceXdata() {
     img_url: "",
     title: "",
   });
-  const [spaceX, setSpaceX] = useState(
-    {
-      name: "",
-      date_local: "",
-      patch_small: "",
-      reddit: "",
-      details: "",
-      article: "",
-      flight: "",
-      reused: "",
-      landing_attempt: "",
-      landing_success: "",
-      landpad: "", // this could be extended by https://api.spacexdata.com/v4/landpads/:id
-    },
-    ""
-  );
+ 
 
   useEffect(() => {
-    getSpaceX();
     getApod();
   }, []);
 
-  // function for spaceX data retrival
-  const getSpaceX = async () => {
-    const api = await fetch("https://api.spacexdata.com/v4/launches/latest");
-    const data = api.json();
-    data
-      .then((e) => {
-        console.log(data);
-        const obj = {
-          name: e.name,
-        };
-        console.log(obj.name);
-        //setSpaceX(obj)
-      })
-      .catch((e) => console.log(e));
-  };
-
+ 
   // function for apod data retrival
   const getApod = async () => {
     const api = await fetch(
@@ -63,15 +33,18 @@ function SpaceXdata() {
           author: e.copyright,
           date: e.date,
           explanation: e.explanation,
-          img_url: e.hdurl,
+          img_url: e.url,
           Title: e.title,
         };
 
         setApod(obj);
+        console.log(obj)
       })
       .catch((e) => console.log(e));
   };
-
+ 
+  
+  
   return (
     <div className="Nasa-spaceX">
       <h2>
@@ -87,13 +60,29 @@ function SpaceXdata() {
       </div>
       <div className="container height">
         <div className="first-section">
-          <img src={apod.img_url} alt="apod" />
+          <div className="video-responsive">
+            {(apod.img_url.length > 1) ? 
+            <div>
+              <img src={apod.img_url} alt="apod" />
+              <Iframe 
+                  width="850"
+                  height="480"
+                  src={`https://www.youtube.com/embed/${apod.img_url}`}
+                  frameBorder="0"
+                  allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  title={apod.author}
+                />
+              </div>
+              : null}
+             
+            </div>
         </div>
         <div className="second-section">
           <div>
             <p className="title"> {apod.Title}</p>
-            <p>Author: {apod.author}</p>
-            <p>Date: {apod.date}</p>
+             { (apod.author === undefined ) ? null :<p> Author: {apod.author}</p> } 
+            <p>{apod.date}</p>
           </div>
           <div className="informations">
             <p>{apod.explanation}</p>

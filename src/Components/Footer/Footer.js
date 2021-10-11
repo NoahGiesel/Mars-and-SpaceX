@@ -2,6 +2,7 @@ import React from "react";
 
 import "./Footer.css";
 import mars_world from "../../img/mars_world.jpg";
+import { IoLogoInstagram,IoLogoYoutube,IoPencilSharp,IoLogoTwitter } from "react-icons/io5";
 
 const Footer = () => {
   return (
@@ -10,27 +11,21 @@ const Footer = () => {
       <div className="grid">
         <div className="text">
           <div className="container">
-            <h4>MARS</h4>
-            <p>
-              We connect planets <br /> to humans
-            </p>
+            <h4 className="logo">MARS</h4> 
           </div>
           <div className="container">
-            <h4>Explore</h4>
             <p>Home</p>
             <p>Missions</p>
             <p>Landing</p>
             <p>Future</p>
           </div>
           <div className="container">
-            <h4>Follow</h4>
-            <p>Instagram</p>
-            <p>YouTube</p>
-            <p>Twitter</p>
-            <p>Blog</p>
+            <p><IoLogoInstagram /> Instagram</p>
+            <p><IoLogoYoutube /> YouTube</p>
+            <p><IoLogoTwitter />  Twitter</p>
+            <p><IoPencilSharp />  Blog</p>
           </div>
           <div className="container">
-            <h4>Legal</h4>
             <p>Terms</p>
             <p>Privacy</p>
             <p>Cookies</p>
