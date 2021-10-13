@@ -64,6 +64,7 @@ function SpaceXdata() {
             {(apod.img_url.length > 1) ? 
             <div>
               <img src={apod.img_url} alt="apod" />
+              {(apod.img_url.includes("youtube"))?  
               <Iframe 
                   width="850"
                   height="480"
@@ -72,8 +73,8 @@ function SpaceXdata() {
                   allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                   title={apod.author}
-                />
-              </div>
+                />:null }
+              </div> 
               : null}
              
             </div>

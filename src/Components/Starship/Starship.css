@@ -2,8 +2,8 @@
   background-color: #000;
   color: #f3f3f3;
   min-height: 100vh;
-  overflow-x: hidden;
-  position: relative;
+  overflow : hidden;
+  position: relative; 
 }
 
 .Starship .video-background {
@@ -69,4 +69,24 @@
   #shuttlevideo {
     display: none;
   }
+}
+@media screen and (max-width: 1020px) {
+  
+.Starship-shuttle {
+  overflow-x: hidden;
+}
+  .Starship h1 {
+    font-size: 3rem;
+  }
+  .Starship-shuttle .container {
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    width: 90%;
+  }
+
+  .Starship-shuttle .container h1 {
+    font-size: 3rem;
+  }
+  
 }

@@ -56,5 +56,30 @@
 
 .about-api p { 
   margin: 2vh auto;
+  padding: 0 3rem;
   text-align: center;
+}
+
+
+@media screen and (max-width: 1020px) {
+  .Nasa-spaceX h2 {
+    font-size: 4rem  ; 
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .Nasa-spaceX .container {
+    display: grid;
+    grid-template-columns:none;
+    grid-template-rows: 1fr .5fr;
+  }
+    
+  .Nasa-spaceX .container .second-section {
+    display: grid;
+    grid-template-rows: .5fr 2.5fr;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+
 }

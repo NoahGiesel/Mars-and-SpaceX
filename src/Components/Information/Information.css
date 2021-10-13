@@ -67,5 +67,13 @@
     color: #f3f3f3; 
 }
  
- 
-  
+    @media (max-width: 780px) {
+    .info .container {
+        display: grid;
+        grid-template-rows: .7fr 1.3fr; 
+        grid-template-columns: none; 
+        width: 90%;
+        margin: 0 auto;
+    }
+
+}

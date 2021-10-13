@@ -77,3 +77,33 @@
 .footer .year  {
   margin-top: 3vh;
 }
+
+@media screen and (max-width: 1350px) { 
+  .footer .grid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+  }
+}
+@media screen and (max-width: 550px) { 
+  .footer .grid {
+    width: 90%;
+  }
+  .footer .grid .text {
+    display: flex;
+    flex-direction: column;
+    border-bottom: none;
+  }
+  .footer .text .container{
+    border-bottom: 1px solid #fefefeb6;
+  }
+  .footer .text .container p {
+    text-align: center;
+  }
+  .footer .grid .informations {
+    width: 70%;
+  }
+  
+}
